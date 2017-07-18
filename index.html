@@ -19,7 +19,7 @@
        <button ng-click="flag.check(flag.res[2]); flag.flagGen()" class="opstyle btn btn-primary">{{flag.res[2]}}</button>
        <button ng-click="flag.check(flag.res[3]); flag.flagGen()" class="opstyle btn btn-primary">{{flag.res[3]}}</button>
        <br><br><br>
-       <button ng-click="flag.flagGen()"class="btnstyle btn btn-primary">skip</button><br>
+       <button ng-click="flag.flagGen()"class="btnstyle" ng-class="{'btn btn-success':flag.st,'btn btn-primary':!flag.st}">{{flag.st?'start':'skip'}}</button><br>
        <h1 ng-if="flag.status" class="answer animated tada">{{flag.checking}}</h1>
        <h1 ng-if="!flag.status" class="wronganswer animated tada">{{flag.checking}}</h1>
        <h2 class="score">Score = {{flag.sc}} <br>High Score = {{flag.hs}}</h2>

@@ -11,10 +11,12 @@ flag.flagGen = flagGen;
 flag.res=new Array();
 flag.checking="";
 flag.status=true;
+flag.st=true;
  flag.hs=0;
     flag.sc=0;
 function flagGen(){
      flag.res.length=0;
+     flag.st=false;
     var r  = Math.round(Math.random()*(nations.length-1));
     do
     {
