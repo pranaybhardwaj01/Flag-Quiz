@@ -1,0 +1,44 @@
+.style1 
+{  
+   height:100px;
+   width:200px;
+   position: relative;left: 40%;
+   margin-top: 20px;
+   margin-bottom:20px;
+}
+.btnstyle
+{
+    height:5em;
+   width:5em;
+   position:relative;left :45%
+}
+.opstyle
+{
+   height:30px;;
+   width:300px;
+   position:relative;left :25%;
+   margin-top: 10px;
+   margin-left: 5px;
+}
+.answer{
+    text-align: center;
+    font:italic;
+    color: green
+}
+.wronganswer{
+    text-align: center;
+    font:italic;
+    color: red
+}
+.score{
+    text-align: center;
+    color: purple;
+}
+.header{
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightsalmon;
+}
+.style2{
+    background-color: lightblue;
+}

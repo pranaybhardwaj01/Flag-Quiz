@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="bower_components/flag-icon-css/css/flag-icon.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    </head>
+    <body ng-app="flags" class="style2">
+    <div class="header" align="center">Flag Quiz</div>
+        <div ng-controller="flagCtrl as flag">
+                <div class="flag-icon flag-icon-{{flag.randomCode}} style1 animated zoomIn"></div><br>
+                <br><br>    
+       <button ng-click="flag.check(flag.res[0]) ; flag.flagGen()" class="opstyle btn btn-primary">{{flag.res[0]}}</button>
+       <button ng-click="flag.check(flag.res[1]); flag.flagGen()" class="opstyle btn btn-primary">{{flag.res[1]}}</button>
+       <br><br>
+       <button ng-click="flag.check(flag.res[2]); flag.flagGen()" class="opstyle btn btn-primary">{{flag.res[2]}}</button>
+       <button ng-click="flag.check(flag.res[3]); flag.flagGen()" class="opstyle btn btn-primary">{{flag.res[3]}}</button>
+       <br><br><br>
+       <button ng-click="flag.flagGen()"class="btnstyle btn btn-primary">skip</button><br>
+       <h1 ng-if="flag.status" class="answer animated tada">{{flag.checking}}</h1>
+       <h1 ng-if="!flag.status" class="wronganswer animated tada">{{flag.checking}}</h1>
+       <h2 class="score">Score = {{flag.sc}} <br>High Score = {{flag.hs}}</h2>
+       </div>
+       
+
+
+        
+    </body>
+</html>
