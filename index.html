@@ -13,11 +13,11 @@
         <div ng-controller="flagCtrl as flag">
                 <div class="flag-icon flag-icon-{{flag.randomCode}} style1 animated zoomIn"></div><br>
                 <br><br>    
-       <button ng-click="flag.check(flag.res[0]) ; flag.flagGen()" class="opstyle btn btn-primary">{{flag.res[0]}}</button>
-       <button ng-click="flag.check(flag.res[1]); flag.flagGen()" class="opstyle btn btn-primary">{{flag.res[1]}}</button>
+       <button ng-click="flag.check(flag.res[0]) ; flag.flagGen()" class="opstyle btn btn-primary" ng-class="{'btn btn-sucess':flag.click&&flag.status,'btn btn-assertive':flag.click&&!flag.status}">{{flag.res[0]}}</button>
+       <button ng-click="flag.check(flag.res[1]); flag.flagGen()" class="opstyle btn btn-primary" ng-class="{'btn btn-sucess':flag.click&&flag.status,'btn btn-assertive':flag.click&&!flag.status}">{{flag.res[1]}}</button>
        <br><br>
-       <button ng-click="flag.check(flag.res[2]); flag.flagGen()" class="opstyle btn btn-primary">{{flag.res[2]}}</button>
-       <button ng-click="flag.check(flag.res[3]); flag.flagGen()" class="opstyle btn btn-primary">{{flag.res[3]}}</button>
+       <button ng-click="flag.check(flag.res[2]); flag.flagGen()" class="opstyle btn btn-primary" ng-class="{'btn btn-sucess':flag.click&&flag.status,'btn btn-assertive':flag.click&&!flag.status}">{{flag.res[2]}}</button>
+       <button ng-click="flag.check(flag.res[3]); flag.flagGen()" class="opstyle btn btn-primary" ng-class="{'btn btn-sucess':flag.click&&flag.status,'btn btn-assertive':flag.click&&!flag.status}">{{flag.res[3]}}</button>
        <br><br><br>
        <button ng-click="flag.flagGen()"class="btnstyle" ng-class="{'btn btn-success':flag.st,'btn btn-primary':!flag.st}">{{flag.st?'start':'skip'}}</button><br>
        <h1 ng-if="flag.status" class="answer animated tada">{{flag.checking}}</h1>
