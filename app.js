@@ -13,7 +13,9 @@ flag.checking="";
 flag.status=true;
 flag.st=true;
  flag.hs=0;
-    flag.sc=0;
+ flag.sc=0;
+
+
 function flagGen(){
      flag.res.length=0;
      flag.click=true;
