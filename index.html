@@ -11,8 +11,8 @@
     <body ng-app="flags" class="style2">
     <div class="header" align="center">Flag Quiz</div>
         <div ng-controller="flagCtrl as flag">
-                <div class="flag-icon flag-icon-{{flag.randomCode}} style1 animated zoomIn"></div><br>
-                <br><br>    
+        <div class="flag-icon flag-icon-{{flag.randomCode}} style1 animated zoomIn"></div><br>
+        <br><br>    
        <button ng-click="flag.check(flag.res[0]) ; flag.flagGen()" class="opstyle btn btn-primary" ng-class="{'btn btn-sucess':flag.click&&flag.status,'btn btn-assertive':flag.click&&!flag.status}">{{flag.res[0]}}</button>
        <button ng-click="flag.check(flag.res[1]); flag.flagGen()" class="opstyle btn btn-primary" ng-class="{'btn btn-sucess':flag.click&&flag.status,'btn btn-assertive':flag.click&&!flag.status}">{{flag.res[1]}}</button>
        <br><br>

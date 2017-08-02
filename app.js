@@ -49,7 +49,6 @@ function flagGen(){
            flag.sc=0;
            flag.status=false;
          }
-      
     }
        if(flag.sc>flag.hs)
         {
